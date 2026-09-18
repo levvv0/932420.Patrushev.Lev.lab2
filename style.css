@@ -1,0 +1,166 @@
+:root {
+  --background: #1d1d40;
+  --surface: #1f2337;
+  --text: #f1f5ff;
+  --accent: #00d9ff;
+  --secondary: #ed7bc7;
+  --body-font: Arial;
+  --heading-font: "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  color: var(--text);
+  background-color: var(--background);
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header, main, footer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  min-height: 210px;
+  padding: 0 190px 24px 0;
+  border-bottom: 2px solid var(--accent);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1, h2, h3 {
+  color: var(--accent);
+}
+
+img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px solid var(--accent);
+}
+
+section {
+  position: static;
+  margin: 28px 0;
+}
+
+aside, .card, form {
+  background-color: var(--surface);
+  border: 1px solid var(--accent);
+}
+
+aside {
+  float: right;
+  width: 280px;
+  margin: 28px 0 24px 50px;
+  padding: 20px;
+}
+
+ul, ol {
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.card {
+  padding: 20px;
+}
+
+.neon {
+  text-shadow: 1px 0 var(--accent), -1px 0 var(--accent),
+  0 1px var(--accent), 0 -1px var(--accent);
+}
+
+.card:hover .card-text {
+  transform: translate(1px, -1x);
+  text-shadow: -2px 1px var(--accent), 2px -1px var(--secondary);
+}
+
+a {
+  color: var(--accent);
+}
+
+a:visited {
+  color: var(--secondary);
+}
+
+a:hover {
+  color: var(--text);
+}
+
+form {
+  margin: 28px 0;
+  padding: 24px;
+}
+
+input, textarea, button {
+  font-family: var(--body-font);
+  font-size: 16px;
+  border: 2px solid var(--accent);
+  padding: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text);
+  opacity: 1;
+}
+
+textarea {
+  height: 130px;
+}
+
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 3px solid var(--secondary);
+}
+
+button {
+  color: var(--background);
+  background-color: var(--accent);
+}
+
+button:hover {
+  background-color: var(--text);
+}
+
+a:active {
+  color: var(--secondary);
+}
+
+button:active {
+  background-color: var(--secondary);
+}
+
+.neon:active, .card:active .card-text {
+  text-shadow: none;
+}
+
+footer {
+  padding: 20px 0;
+}
