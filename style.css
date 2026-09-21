@@ -70,8 +70,8 @@ aside, .card, form {
 aside {
   float: right;
   width: 280px;
-  margin: 28px 0 24px 50px;
-  padding: 20px;
+  margin: 1px 0 24px 50px;
+  padding: 24px;
 }
 
 ul, ol {
@@ -92,7 +92,7 @@ li {
 }
 
 .card:hover .card-text {
-  transform: translate(1px, -1x);
+  transform: translate(1px, -1px);
   text-shadow: -2px 1px var(--accent), 2px -1px var(--secondary);
 }
 
@@ -109,8 +109,9 @@ a:hover {
 }
 
 form {
-  margin: 28px 0;
-  padding: 24px;
+  width: 700px;
+  margin: 30px 0;
+  padding: 27px;
 }
 
 input, textarea, button {
