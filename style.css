@@ -50,7 +50,7 @@ h1, h2, h3 {
   color: var(--accent);
 }
 
-img {
+.profile-photo {
   position: absolute;
   top: 0;
   right: 0;
@@ -158,7 +158,11 @@ button:active {
   background-color: var(--secondary);
 }
 
-.neon:active, .card:active .card-text {
+.neon:active {
+  text-shadow: none;
+}
+
+.card:active .card-text {
   text-shadow: none;
 }
 
